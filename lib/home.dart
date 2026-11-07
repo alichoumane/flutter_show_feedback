@@ -154,11 +154,12 @@ class _HomeState extends State<Home> {
             ElevatedButton(
               onPressed: () {
                 SnackBar snackBar = SnackBar(
+                  persist: false,
                   content: Text(
                     'Message Deleted!',
                     style: TextStyle(fontSize: 18.0),
                   ),
-                  duration: Duration(seconds: 10),
+                  duration: Duration(seconds: 5),
                   action: SnackBarAction(
                     label: "Undo",
                     onPressed: () {
